@@ -1,11 +1,11 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 struct TreeNode
 {
     int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode() : val(0), left(NULLptr), right(NULLptr) {}
-    TreeNode(int x) : val(x), left(NULLptr), right(NULLptr) {}
-    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+    struct TreeNode *left;
+    struct TreeNode *right;
 };
 
 int maxDepth(TreeNode *root)
