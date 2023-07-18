@@ -3,6 +3,7 @@ using namespace std;
 
 int subarraySum(vector<int> &nums, int k)
 {
+    //Prefix Sum
     unordered_map<int, int> m;
     m[0] = 1;
     int preSum = 0, cnt = 0;
