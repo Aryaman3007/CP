@@ -10,10 +10,7 @@ int longestKSubstr(string s, int k)
     while (end < s.size())
     {
         mp[s[end]]++;
-        if (mp.size() < k)
-        {
-        }
-        else if (mp.size() == k)
+        if (mp.size() == k)
         {
             ans = max(ans, end - st + 1);
         }
