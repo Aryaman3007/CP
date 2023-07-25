@@ -19,6 +19,8 @@ void dfs(vector<vector<int>> &image, vector<vector<int>> &ans, int sr, int sc, i
 
 vector<vector<int>> floodFill(vector<vector<int>> &image, int sr, int sc, int color)
 {
+    //SC-> O(NxM)->ans matrix + O(NxM)->recursion stackspace
+    //TC-> O(NxM)->for reaching every node if have same inicolor + O(4xNxM)->for reaching neighbours of every node ~ O(NxM);
     int inicolor = image[sr][sc];
     vector<vector<int>> ans = image;
     int delrow[] = {-1, 0, +1, 0};
