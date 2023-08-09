@@ -31,7 +31,7 @@ vector<int> topoSort(int V, vector<int> adj[])
         st.pop();
     }*/
 
-    // Using BFS
+    // Using BFS(Kahn's Algorithm)
     vector<int> ans;
     queue<int> q;
     int indegree[V] = {0};
